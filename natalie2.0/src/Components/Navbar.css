@@ -1,0 +1,41 @@
+.navbar {
+    height: 50px;
+    background-color: #110E0F;
+    padding: 10px;
+    /* position: fixed; */
+    width: 100vw;
+}
+
+.navbar-links {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.navbar-links a {
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-blocks;
+    position: relative;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
