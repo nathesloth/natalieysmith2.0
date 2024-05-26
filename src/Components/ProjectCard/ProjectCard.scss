@@ -1,0 +1,19 @@
+.card {
+  width: 45%;
+
+  > .card-image {
+    border-radius: 30px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      //   background-image: none !important;
+      background-color: rgba(255, 255, 255, 0.2);
+      background-blend-mode: lighten;
+      cursor: pointer;
+      transition: background-color 1s ease;
+    }
+  }
+}

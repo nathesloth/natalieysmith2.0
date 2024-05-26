@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/natalieysmith2.0/static/css/main.1e29f586.css",
+    "main.js": "/natalieysmith2.0/static/js/main.82f0927e.js",
+    "static/media/profile.JPG": "/natalieysmith2.0/static/media/profile.c6a31d387081646d70d8.JPG",
+    "index.html": "/natalieysmith2.0/index.html",
+    "main.1e29f586.css.map": "/natalieysmith2.0/static/css/main.1e29f586.css.map",
+    "main.82f0927e.js.map": "/natalieysmith2.0/static/js/main.82f0927e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e29f586.css",
+    "static/js/main.82f0927e.js"
+  ]
+}

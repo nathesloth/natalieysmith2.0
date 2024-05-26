@@ -1,0 +1,79 @@
+
+// .hero-slide:hover {
+//     box-shadow: rgba(193, 193, 193, 0.2) 0px 20px 30px;
+//     transform: translateY(-5px);
+//     transition: 0.5s ease-in-out;
+//     cursor: pointer;
+//     filter: saturate(1);
+// }
+
+$finalHeight: 80vh;
+$finalWidth: 3 * $finalHeight;
+$scrollBarHeight: 0px;
+
+::-webkit-scrollbar {
+    width: $scrollBarHeight;
+    height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+    width: $scrollBarHeight;
+    height: $scrollBarHeight;
+}
+
+.hero-slide {
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 200px;
+    /* width: 90%; */
+    height: 80vh;
+    background-color: pink;
+    overflow: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 20px 30px;
+    transition: 0.5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.hero-slide::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+
+.hero-slide {
+    height: 80vh;
+    width: 90%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: calc(#{$finalHeight} + #{$scrollBarHeight});
+    max-height: $finalWidth;
+    // margin: 0;
+    padding-top: $scrollBarHeight;
+    background: #abc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-$finalHeight);
+    transform-origin: right top;
+
+    &>div {
+        display: block;
+        transform: rotate(90deg);
+        transform-origin: right top;
+    }
+}
+
+.hero-slide {
+    padding: $finalHeight 0 0 0;
+
+    &>div {
+        width: $finalHeight;
+        height: $finalHeight;
+        // overflow: hidden;
+    }
+}

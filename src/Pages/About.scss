@@ -1,0 +1,19 @@
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  //   > div {
+  //     width: 40vw;
+  //   }
+
+  &-image {
+    // width: 40vw;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

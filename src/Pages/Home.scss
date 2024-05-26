@@ -1,0 +1,21 @@
+.section {
+  height: 100vh;
+}
+.main-page {
+  height: calc(100vh - 50px);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10rem;
+
+  & h1 {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-page {
+    padding: 0px 5rem;
+  }
+}
